@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isRunning", isRunning);
         animator.SetBool("isJumping", isJumping);
     }
+
 }
 
         
