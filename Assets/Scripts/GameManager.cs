@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
