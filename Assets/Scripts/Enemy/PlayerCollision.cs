@@ -11,7 +11,7 @@ public class PlayerCollision1 : MonoBehaviour
         gameManager = FindAnyObjectByType<GameManager>();
         if (gameManager == null)
         {
-            Debug.LogError("GameManager not found in scene!");
+           
         }
     }
 
@@ -23,10 +23,36 @@ public class PlayerCollision1 : MonoBehaviour
             GameManager.Destroy(gameObject);
         }
 
-        else if (collision.CompareTag("Key"))
+        
+
+        {
+            if (collision.CompareTag("Enemy(1)"))
 
         {
             GameManager.Destroy(gameObject);
+        }
+            if (collision.CompareTag("Enemy(2)"))
+
+            {
+                GameManager.Destroy(gameObject);
+            }
+
+
+
+            if (collision.CompareTag("Enemy(3)"))
+
+            {
+                GameManager.Destroy(gameObject);
+            }
+
+
+            if (collision.CompareTag("Boss"))
+
+            {
+                GameManager.Destroy(gameObject);
+            }
+
+
         }
 
 
