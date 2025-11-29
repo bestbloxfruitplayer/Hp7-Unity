@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform groundCheck;
     private Animator animator;
-    private bool isGrounded;
+    public bool isGrounded;
     private Rigidbody2D rb;
     private void Awake()
     {
@@ -42,6 +42,10 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpforce);
         }
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        if(isGrounded == true)
+        {
+            rb.gravityScale = 5f;
+        }
     }
     private void UpdateAnimation()
     {

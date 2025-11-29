@@ -11,6 +11,8 @@ TagManager:
   - Coin
   - Key1
   - skynotfandomdom
+  - consumeLava
+  - Slime
   layers:
   - Default
   - TransparentFX
@@ -18,11 +20,11 @@ TagManager:
   - 
   - Water
   - UI
+  - Front
+  - Mid
+  - mist
+  - back
   - Ground
-  - 
-  - 
-  - 
-  - 
   - 
   - 
   - 
@@ -51,14 +53,20 @@ TagManager:
   - name: Player
     uniqueID: 317606833
     locked: 0
-  - name: Ground
+  - name: Front
+    uniqueID: 2285375701
+    locked: 0
+  - name: ground
     uniqueID: 985392683
     locked: 0
-  - name: Enemy
-    uniqueID: 1916097889
+  - name: mist
+    uniqueID: 2912007089
     locked: 0
-  - name: Item
-    uniqueID: 3759108827
+  - name: back
+    uniqueID: 1123390453
+    locked: 0
+  - name: 
+    uniqueID: 828402657
     locked: 0
   m_RenderingLayers:
   - Default
